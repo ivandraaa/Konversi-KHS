@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Input */
+input[type=text], select {
+    width: 50%;
+    padding: 10px 18px;
+    margin: 7px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type=text], select ::placeholder {
+    text-align: center;
+}
+
+/* Button */
+.btn {
+    appearance: button;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.btn:focus {
+    text-decoration: none;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+.btn:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+}
+
+.btn:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+}
+
+/* TABLE KHS */
+table {
+    border-collapse: collapse;
+    margin-left: 20%;
+}
+
+table th, td{
+    border: 3px solid black;
+}
+
+th, td {
+    text-align: center;
+}
+
+th {
+    background-color: #7ed6df;
+    height: 55px;
+    font-size: 20px
+}
+
+td {
+    font-size: 16px;
+    height: 35px;
+    font-weight: 500;
+}
+
+table .total-ip {
+    font-weight: bold;
+    text-align:center;
+    font-size: 18px;
+}
