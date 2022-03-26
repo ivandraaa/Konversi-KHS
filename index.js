@@ -67,10 +67,8 @@ var myElement = document.getElementById("button").onclick = function(){
 
     // Hasil IPK
         let out_ip = document.getElementById('ip');
-        out_ip.innerHTML = (+inputAngka1.value*inputSks1.value + +inputAngka2.value*inputSks2.value + +inputAngka3.value*inputSks3.value + +inputAngka4.value*inputSks4.value + +inputAngka5.value*inputSks1.value) 
-        / (+inputSks1.value + +inputSks2.value + +inputSks3.value + +inputSks4.value + +inputSks5.value);
-
-    
+        out_ip.innerHTML = ((+inputAngka1.value*inputSks1.value + +inputAngka2.value*inputSks2.value + +inputAngka3.value*inputSks3.value + +inputAngka4.value*inputSks4.value + +inputAngka5.value*inputSks1.value) 
+        / (+inputSks1.value + +inputSks2.value + +inputSks3.value + +inputSks4.value + +inputSks5.value)).toFixed(2);
         
         if(inputAngka1.value == 4){
             document.getElementById("huruf1").innerHTML= "A";
@@ -82,5 +80,65 @@ var myElement = document.getElementById("button").onclick = function(){
             document.getElementById("huruf1").innerHTML="D";
         }else if(inputAngka1.value == 0){
             document.getElementById("huruf1").innerHTML="E";
-        }          
+        }
+
+        if(inputAngka1.value == 4){
+            document.getElementById("huruf1").innerHTML= "A";
+        }else if(inputAngka1.value == 3){
+            document.getElementById("huruf1").innerHTML="B";
+        }else if(inputAngka1.value == 2){
+            document.getElementById("huruf1").innerHTML="C";
+        }else if(inputAngka1.value == 1){
+            document.getElementById("huruf1").innerHTML="D";
+        }else if(inputAngka1.value == 0){
+            document.getElementById("huruf1").innerHTML="E";
+        }
+
+        if(inputAngka2.value == 4){
+            document.getElementById("huruf2").innerHTML= "A";
+        }else if(inputAngka2.value == 3){
+            document.getElementById("huruf2").innerHTML="B";
+        }else if(inputAngka2.value == 2){
+            document.getElementById("huruf2").innerHTML="C";
+        }else if(inputAngka2.value == 1){
+            document.getElementById("huruf2").innerHTML="D";
+        }else if(inputAngka2.value == 0){
+            document.getElementById("huruf2").innerHTML="E";
+        }
+
+        if(inputAngka3.value == 4){
+            document.getElementById("huruf3").innerHTML= "A";
+        }else if(inputAngka3.value == 3){
+            document.getElementById("huruf3").innerHTML="B";
+        }else if(inputAngka3.value == 2){
+            document.getElementById("huruf3").innerHTML="C";
+        }else if(inputAngka3.value == 1){
+            document.getElementById("huruf3").innerHTML="D";
+        }else if(inputAngka3.value == 0){
+            document.getElementById("huruf3").innerHTML="E";
+        }
+
+        if(inputAngka4.value == 4){
+            document.getElementById("huruf4").innerHTML= "A";
+        }else if(inputAngka4.value == 3){
+            document.getElementById("huruf4").innerHTML="B";
+        }else if(inputAngka4.value == 2){
+            document.getElementById("huruf4").innerHTML="C";
+        }else if(inputAngka4.value == 1){
+            document.getElementById("huruf4").innerHTML="D";
+        }else if(inputAngka4.value == 0){
+            document.getElementById("huruf4").innerHTML="E";
+        }
+
+        if(inputAngka5.value == 4){
+            document.getElementById("huruf5").innerHTML= "A";
+        }else if(inputAngka5.value == 3){
+            document.getElementById("huruf5").innerHTML="B";
+        }else if(inputAngka5.value == 2){
+            document.getElementById("huruf5").innerHTML="C";
+        }else if(inputAngka5.value == 1){
+            document.getElementById("huruf5").innerHTML="D";
+        }else if(inputAngka5.value == 0){
+            document.getElementById("huruf5").innerHTML="E";
+    }
 }
